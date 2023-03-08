@@ -34,25 +34,38 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                Habilidades
                             </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and tysetting industry.<br/> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <p>
+                                El desarrollo de software es una actividad que requiere de diversas habilidades técnicas 
+                                y personales para crear soluciones innovadoras y funcionales.
+                                <br/>
+                                Algunas de las habilidades más importantes son la curiosidad,
+                                el aprendizaje autodidacta, el dominio de diferentes lenguajes de programación
+                                y la capacidad de resolver problemas.
+                                <sup>
+                                    <a href="https://talently.tech/blog/habilidades-de-un-desarrollador-de-software/">1</a>
+                                </sup>
+                                <br/>
+                                Además, los desarrolladores de software deben trabajar en equipo y comunicarse eficazmente con sus clientes y compañeros.
+                                <sup>
+                                    <a href="https://profile.es/blog/5-soft-skills-esenciales-para-desarrolladores-de-software/">2</a>
+                                </sup>
+                                <br/>
+                                En esta sección te presentamos algunas de las áreas más relevantes del desarrollo de software.
+                            </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image1" />
-                                    <h5>Web Development</h5>
+                                    <h5>Desarrollo Web</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image2" />
-                                    <h5>Brand Identify</h5>
+                                    <h5>Desarrollo de Software</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image3" />
-                                    <h5>Logo Desing</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Image4" />
-                                    <h5>Web Development</h5>
+                                    <h5>Desarrollo de Aplicaciones Moviles</h5>
                                 </div>
                             </Carousel>
                         </div>
