@@ -40,6 +40,7 @@ export const NavBar = () => {
               <Nav className="me-auto" navbarScroll>
                 <Nav.Link as={Link} to="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Inicio</Nav.Link>
                 <Nav.Link as={Link} to="/projects" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>Quienes Somos</Nav.Link>
+                <Nav.Link as={Link} to="/aspirant" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aspirant')}>Aspirantes</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contacto</Nav.Link>
                 <Nav.Link as={Link} to="/plans" className={activeLink === 'plans' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('plans')}>Planes</Nav.Link>
               </Nav>

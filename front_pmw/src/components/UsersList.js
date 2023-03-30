@@ -13,7 +13,7 @@ export const UsersList = () => {
     <Container style={{ padding: "160px 0 100px 0" }}>
       <Row xs={1} md={2} lg={3} className='g-4'>
         <Col>
-          <Card className='h-100 p-3' style={{backgroundColor: "#484A4E"}}>
+          <Card className='h-100 p-3 border-0' style={{backgroundColor: "#484A4E"}}>
             <div className='d-flex flex-column justify-content-end align-items-end pb-3'>
               <span style={{ fontWeight: '500' }}>Profesión</span>
             </div>
