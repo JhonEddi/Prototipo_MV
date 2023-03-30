@@ -20,6 +20,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Funciona en Firefox ScrollBar */
+  scrollbar-width: thin; /* "auto" o "thin" */
+  scrollbar-color: #E0E0E0 #37474F ; /* color del thumb y del track */
 }
 
 html {
@@ -80,6 +83,27 @@ p.success {
 
 p.danger {
 	color: red;
+}
+
+/************ ScrollBar Css ************/
+/* Funciona en Chrome, Edge y Safari */
+*::-webkit-scrollbar {
+  width: 8px; /* ancho del scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #37474F; /* color del track */
+  padding-left: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #B0BEC5; /* color del thumb */
+  border-radius: 6px; /* redondez del thumb */
+  transition: background-color .3s ease-in-out; /* transición del thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #CFD8DC; /* color del thumb al pasar el cursor */
 }
 
 /************ Navbar Css ************/
