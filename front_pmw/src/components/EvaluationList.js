@@ -5,7 +5,6 @@ import {
     Row,
     Col,
     Container,
-    Button,
     ProgressBar, Badge, InputGroup, Form
 } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
@@ -15,9 +14,9 @@ export const EvaluationList = () => {
     //Arreglo de evaluaciones.
     const [evaluaciones, setEvaluaciones] = useState([
         { id: 1, titulo: "Evaluación de HTML y CSS", texto: "En esta evaluación debes crear una página web estática con HTML y CSS siguiendo las especificaciones dadas.", progreso: 80 },
-        { id: 2, titulo: "Evaluación de JavaScript", texto: "En esta evaluación debes resolver una serie de ejercicios de programación con JavaScript usando variables, funciones, condicionales, bucles y arrays.", progreso: 70 },
+        { id: 2, titulo: "Evaluación de JavaScript", texto: "En esta evaluación debes resolver una serie de ejercicios de programación con JavaScript usando variables, funciones, condicionales, bucles y arrays.", progreso: 0 },
         { id: 3, titulo: "Evaluación de React", texto: "En esta evaluación debes crear una aplicación web dinámica con React usando componentes, props, estado y hooks.", progreso: 100 },
-        { id: 4, titulo: "Evaluación de Node.js", texto: "En esta evaluación debes crear una API REST con Node.js usando Express, MongoDB y Mongoose.", progreso: 50 },
+        { id: 4, titulo: "Evaluación de Node.js", texto: "En esta evaluación debes crear una API REST con Node.js usando Express, MongoDB y Mongoose.", progreso: 90 },
         { id: 5, titulo: "Evaluación de Python", texto: "En esta evaluación debes resolver una serie de ejercicios de programación con Python usando variables, funciones, condicionales, bucles y listas.", progreso: 40 },
         { id: 6, titulo: "Evaluación de SQL", texto: "En esta evaluación debes crear una base de datos relacional con SQL usando tablas, consultas, joins y agregaciones.", progreso: 30 },
         { id: 7, titulo: "Evaluación de Git y GitHub", texto: "En esta evaluación debes usar Git y GitHub para gestionar el versionamiento y la colaboración de tus proyectos de software.", progreso: 20 },
@@ -30,7 +29,7 @@ export const EvaluationList = () => {
     const navigate = useNavigate();
     const handleEvaluationClick = (id) => {
         // Aquí puedes pasar el id de la evaluación como un parámetro o un estado
-        navigate(`/evaluacion/${id}`);
+        navigate(`/quiz`);
     };
 
     const [busqueda, setBusqueda] = useState("");
@@ -96,7 +95,7 @@ export const EvaluationList = () => {
 * HOY: Lista planes YA
 * HOY: Login YA
 * HOY: LISTA DE ASPIRANTES * Agregar si paso la prueba o no * YA
-* HOY: LISTA DE EMPLEADOS * DUPLICADO DE ASPIRANTES*
+* HOY: LISTA DE EMPLEADOS * DUPLICADO DE ASPIRANTES* YA
 * LISTA DE EMPRESAS
 ! Presentar evaluación
 ! Resultados evaluación LO MISMO PERO SEÑALANDO SI ES CORRECTO, INCORRECTO Y GRAFICA CON LA NOTA

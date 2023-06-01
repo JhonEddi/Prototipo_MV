@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
-import { Card, Form, Button, Container, InputGroup, Row, Col } from "react-bootstrap";
+import { Card, Form, Container, Row } from "react-bootstrap";
 import logo from '../assets/img/Logo2.svg';
 import { Link } from "react-router-dom";
 
