@@ -95,7 +95,7 @@ export const EvaluationList = () => {
 /*
 * HOY: Lista planes YA
 * HOY: Login YA
-* HOY: LISTA DE ASPIRANTES * Agregar si paso la prueba o no *
+* HOY: LISTA DE ASPIRANTES * Agregar si paso la prueba o no * YA
 * HOY: LISTA DE EMPLEADOS * DUPLICADO DE ASPIRANTES*
 * LISTA DE EMPRESAS
 ! Presentar evaluación
