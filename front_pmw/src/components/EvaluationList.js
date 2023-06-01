@@ -14,17 +14,17 @@ import { Icon } from '@iconify/react';
 export const EvaluationList = () => {
     //Arreglo de evaluaciones.
     const [evaluaciones, setEvaluaciones] = useState([
-        { id: 1, titulo: "Evaluación 1", texto: "Con texto de apoyo...", progreso: 80 },
-        { id: 2, titulo: "Evaluación 2", texto: "Con otro texto...", progreso: 70 },
-        { id: 3, titulo: "Evaluación 3", texto: "Con otro texto...", progreso: 100 },
-        { id: 4, titulo: "Evaluación 4", texto: "Con otro texto...", progreso: 50 },
-        { id: 5, titulo: "Evaluación 5", texto: "Con otro texto...", progreso: 40 },
-        { id: 6, titulo: "Evaluación 6", texto: "Con otro texto...", progreso: 30 },
-        { id: 7, titulo: "Evaluación 7", texto: "Con otro texto...", progreso: 20 },
-        { id: 8, titulo: "Evaluación 8", texto: "Con otro texto...", progreso: 10 },
-        { id: 9, titulo: "Evaluación 9", texto: "Con otro texto...", progreso: 90 },
-        // etc
-    ]);
+        { id: 1, titulo: "Evaluación de HTML y CSS", texto: "En esta evaluación debes crear una página web estática con HTML y CSS siguiendo las especificaciones dadas.", progreso: 80 },
+        { id: 2, titulo: "Evaluación de JavaScript", texto: "En esta evaluación debes resolver una serie de ejercicios de programación con JavaScript usando variables, funciones, condicionales, bucles y arrays.", progreso: 70 },
+        { id: 3, titulo: "Evaluación de React", texto: "En esta evaluación debes crear una aplicación web dinámica con React usando componentes, props, estado y hooks.", progreso: 100 },
+        { id: 4, titulo: "Evaluación de Node.js", texto: "En esta evaluación debes crear una API REST con Node.js usando Express, MongoDB y Mongoose.", progreso: 50 },
+        { id: 5, titulo: "Evaluación de Python", texto: "En esta evaluación debes resolver una serie de ejercicios de programación con Python usando variables, funciones, condicionales, bucles y listas.", progreso: 40 },
+        { id: 6, titulo: "Evaluación de SQL", texto: "En esta evaluación debes crear una base de datos relacional con SQL usando tablas, consultas, joins y agregaciones.", progreso: 30 },
+        { id: 7, titulo: "Evaluación de Git y GitHub", texto: "En esta evaluación debes usar Git y GitHub para gestionar el versionamiento y la colaboración de tus proyectos de software.", progreso: 20 },
+        { id: 8, titulo: "Evaluación de Docker y Kubernetes", texto: "En esta evaluación debes usar Docker y Kubernetes para crear y desplegar contenedores con tus aplicaciones web.", progreso: 10 },
+        { id: 9, titulo: "Evaluación de AWS", texto: "En esta evaluación debes usar AWS para alojar y escalar tus aplicaciones web en la nube.", progreso: 90 },
+      ]);
+      
 
     // handle para ir a ver la evaluación.
     const navigate = useNavigate();
@@ -50,11 +50,11 @@ export const EvaluationList = () => {
 
     return (
         <div style={{ background: "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)" }}>
-            <Container style={{ padding: "160px 0 100px 0" }}>
+            <Container style={{ padding: "160px 0 160px 0" }}>
                 <Row>
                     <Col className='p-4'>
                         <Form.Group className="mb-3">
-                            <Form.Label>Buscar evaluación</Form.Label>
+                            <h3>Buscar evaluación</h3>
                             <InputGroup label="Buscar">
                                 <Form.Control type="search" value={busqueda} onChange={(e) => setBusqueda(e.target.value)} className="input" placeholder="Buscar" />
                             </InputGroup>
@@ -80,7 +80,7 @@ export const EvaluationList = () => {
                                         </Badge>
                                     </div>
                                     <div className='px-4'>
-                                        <Icon icon="carbon:port-input" width="36" height="36" onClick={() => handleEvaluationClick(evaluacion.id)} />
+                                        <Icon icon="carbon:port-input" style={{cursor: 'pointer'}} width="36" height="36" onClick={() => handleEvaluationClick(evaluacion.id)} />
                                     </div>
                                 </div>
                             </Card>
@@ -93,12 +93,11 @@ export const EvaluationList = () => {
 }
 
 /*
-* HOY: Lista planes
-* HOY: Login
+* HOY: Lista planes YA
+* HOY: Login YA
 * HOY: LISTA DE ASPIRANTES * Agregar si paso la prueba o no *
 * HOY: LISTA DE EMPLEADOS * DUPLICADO DE ASPIRANTES*
 * LISTA DE EMPRESAS
-* Perfil usuario
 ! Presentar evaluación
 ! Resultados evaluación LO MISMO PERO SEÑALANDO SI ES CORRECTO, INCORRECTO Y GRAFICA CON LA NOTA
 

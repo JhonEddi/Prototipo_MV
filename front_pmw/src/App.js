@@ -5,6 +5,9 @@ import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { UsersList } from './components/UsersList';
 import { EvaluationList } from './components/EvaluationList';
+import { PricingPlans } from './components/Plans';
+import { Login } from './components/Login';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -14,9 +17,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aspirant" element={<UsersList />} />
           <Route path="/evaluation" element={<EvaluationList />} />
+          <Route path="/plans" element={<PricingPlans />} />
           <Route path="*" element={<Home />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

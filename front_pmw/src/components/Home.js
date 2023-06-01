@@ -2,7 +2,6 @@ import { Banner } from './Banner';
 import { Skills } from './Skills';
 import { Projects } from './Projects';
 import { Contact } from "./Contact";
-import { Footer } from './Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Home = () => {
@@ -12,7 +11,6 @@ export const Home = () => {
             <Skills />
             <Projects />
             <Contact />
-            <Footer />
         </div>
     );
 }
